@@ -4,4 +4,4 @@ Chrome extension for IFTTT Privacy checking.
 
 ## Usage
 
-Load the whole folder at [chrome://extensions](chrome://extensions/).
+Go to [chrome://extensions](chrome://extensions/), abilitate developer mode and load the whole folder.
