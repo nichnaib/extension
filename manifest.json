@@ -7,15 +7,13 @@
     "default_popup": "sketch/popup.html"  
   },  
   "content_scripts": [{
-    "matches": [
-      "https://ifttt.com/*"
-    ],
-    "js": ["content.js"]
+    "matches": ["https://ifttt.com/create/*","https://ifttt.com/applets/*"],
+    "js": ["content.js"],
+    "css": ["sketch/css/style.css"]
   }],
   "background": {
     "scripts": ["background.js"]
   },
-  "permissions": [
-    "storage"
-  ]
+  "permissions": ["storage","activeTab"],
+  "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'"
 }

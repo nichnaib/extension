@@ -1,0 +1,182 @@
+#title {
+  font-size: xx-large;
+  font-weight: bold;  
+  padding: 15px !important;
+  background-color: rgb(31, 184, 231);
+}
+
+
+body {
+  min-width: 550px;
+  min-height: 550px;
+}
+
+.grid-container3-3 {
+  display: grid;
+  grid-template-rows: 1fr 0.5fr 1fr;
+  grid-template-columns: auto auto auto;
+  padding: 1px;
+}
+
+.grid-container1-3 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto auto auto;
+  padding: 1px;
+}
+
+.grid-item {
+  padding: 5px;
+  font-size: 10px;
+  text-align: center;
+}
+
+#triggerName {
+  font-size: small;  
+}
+
+#triggerDescTitle {
+  font-size: small;  
+}
+
+#privateProfile:hover {
+  background-color: grey;
+}
+#restrictedProfile:hover {
+  background-color: grey;
+}
+
+#publicProfile:hover {
+  background-color: grey;
+}
+
+#privateProfile {
+  background-color: rgb(31, 184, 231);
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#restrictedProfile {
+  background-color: rgb(31, 184, 231);
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#publicProfile {
+  background-color: rgb(31, 184, 231);
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+#viewer {
+  font-size: 28px;
+  display: inline-block;
+}
+
+#indice {
+  font-size: 28px; 
+  background-color: rgb(168, 165, 165);
+}
+
+#privacy {
+  font-size: xx-large;
+  /* color: red; */
+}
+
+#actionName {
+  font-size: small;
+}
+
+#actionDescTitle {
+  font-size: small;
+}
+
+#redArrow {
+  transform: "rotate(90deg);"
+}
+#SavedTriggerSrc{
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(31, 184, 231);
+}
+
+#SavedActionSrc {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(31, 184, 231);
+}
+#SavedTriggerName {
+  font-size: small;
+}
+
+#SavedTriggerDescTitle {
+  font-size: small;
+}
+
+#SavedActionName {
+  font-size: small;
+}
+
+#SavedActionDescTitle {
+  font-size: small;
+}
+
+#triggerSrc {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(31, 184, 231);
+}
+#actionSrc {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(31, 184, 231);
+}
+
+#CTriggerName {
+  font-size: small;
+}
+
+#CTriggerDescTitle {
+  font-size: small;
+}
+
+#CTriggerSrc {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: red;
+}
+
+#CActionName {
+  font-size: small;
+}
+
+#CActionDescTitle {
+  font-size: small;
+}
+
+#CActionSrc {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: red;
+}

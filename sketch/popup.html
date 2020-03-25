@@ -1,17 +1,102 @@
 <html>
     <head>
         <title>My Extension</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script script-src-elem="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src="jquery-3.4.1.min.js"></script>
+      <header>
+        <div class="jumbotron text-center" id="title">
+          IFTTT PRIVACY CHECKER
+        </div>
+      </header>
 
     </head>
     <body>
-        <h1>
-            IFTTT Privacy checker
-        </h1>
-        <img id="myImg" src="" width="107" height="98">
-        <div id="info"></div>
 
+      
 
-        <script src="sketch.js" type="text/javascript"></script>
+      <center>
+        <!-- senza chain -->
+        <div class="grid-container1-3" id="noChain" style="display: grid;" >
+
+          <div class="grid-item">
+            <img class="imageOne" id="triggerSrc" src="" width="90" height="80">            
+            <p id="triggerName"> </p>
+            <p id="triggerDescTitle"> </p>
+          </div>
+
+          <div class="grid-item">
+           <img class="arrow" src="/hqdefault.jpg" width="80" height="70">
+          </div>
+
+          <div class="grid-item">
+            <img class="imageTwo" id="actionSrc" src="" width="90" height="80">        
+            <p id="actionName"> </p>
+            <p id="actionDescTitle"> </p>
+          </div>
+
+        </div>
+      </center>
+
+          <!-- con chain -->
+        <div class="grid-container3-3" id="chain" style="display: none;" >
+          <div class="grid-item">
+            <img class="imageOne" id="SavedTriggerSrc" src="" width="90" height="80">            
+            <p id="SavedTriggerName"> </p>
+            <p id="SavedTriggerDescTitle"> </p>
+          </div>
+
+          <div class="grid-item">
+           <img class="arrowOne" src="/hqdefault.jpg" width="80" height="70">
+          </div>
+
+          <div class="grid-item"  >
+            <img class="imageTwo" id="SavedActionSrc" src="" width="90" height="80">        
+            <p id="SavedActionName"> </p>
+            <p id="SavedActionDescTitle"> </p>
+          </div>
+          <div class="grid-item">
+            
+          </div>
+          <div class="grid-item a">
+            <img class="arrowTwo" id="redArrow" src="/arrow.jpeg" width="80" height="70" style="transform: rotate(90deg)">
+           </div>
+           <div class="grid-item">
+
+           </div>
+          <div class="grid-item" >
+            <img class="imageThree" id="CTriggerSrc" src="" width="90" height="80">            
+            <p id="CTriggerName"> </p>
+            <p id="CTriggerDescTitle"> </p>
+          </div>
+
+          <div class="grid-item">
+            <img class="arrowThree" src="/arrow.jpeg" width="80" height="70">
+          </div>
+ 
+          <div class="grid-item" >
+             <img class="imageFour" id="CActionSrc" src="" width="90" height="80">        
+             <p id="CActionName"> </p>
+             <p id="CActionDescTitle"> </p>
+          </div>
+          
+        </div>
+        
+
+        <center>
+
+          <h1 id="indice">Set the visibility of your <p id="viewer"></p> profile</h1>
+          <input type="submit" id="privateProfile" value="Private">
+          <input type="submit" id="restrictedProfile" value="Restricted">
+          <input type="submit" id="publicProfile" value="Public">
+
+  
+          <h1><nobr>Violation index:<p id="privacy"></p></nobr></h1>
+        </center>
+
+      <script src="popup.js" type="text/javascript"></script>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
     </body>
-</html>
+</html> 
